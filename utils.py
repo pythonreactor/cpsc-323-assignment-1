@@ -2,7 +2,7 @@ import os
 
 import settings
 from constants import (
-    FileType,
+    SupportedFileType,
     SourceType
 )
 
@@ -65,7 +65,7 @@ def get_file_path_from_input():
     Retrieve the file path from the user.
     """
     default_file_path    = 'test_files/initial.txt'
-    supported_file_types = ', '.join([file_type.value for file_type in FileType])
+    supported_file_types = ', '.join([file_type.value for file_type in SupportedFileType])
 
     while True:
         file_path = input(f'Please enter the source file path [supported: {supported_file_types}] (default {default_file_path}): ')
@@ -79,8 +79,8 @@ def get_file_path_from_input():
             continue
 
         extension = file_path.lower().split('.')[-1]
-        if extension not in FileType:
-            print('Invalid file type. Please try again.')
+        if extension not in SupportedFileType:
+            print('Unsupported file type. Please try again.')
         elif not os.path.isfile(file_path):
             print('File does not exist. Please try again.')
         else:

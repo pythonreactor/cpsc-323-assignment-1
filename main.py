@@ -33,7 +33,7 @@ def main():
     print('Set of lexemes and tokens (<lexeme> = <token>)', end='\n\n')
     for lexeme, token in analyzer.results:
         print(f'"{lexeme}"{" " * (max_lexeme_length - len(lexeme))} = {token.value}')
-    print(f'Total analyze runtime: {analyzer.total_analyze_runtime:.6f} seconds')
+    print(f'Total analysis runtime: {analyzer.total_analyze_runtime:.6f} seconds')
 
 
 if __name__ == '__main__':

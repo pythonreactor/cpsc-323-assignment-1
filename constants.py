@@ -1,7 +1,7 @@
 from enum import Enum
 
 
-class FileType(str, Enum):
+class SupportedFileType(str, Enum):
     Text = 'txt'
 
 
