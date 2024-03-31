@@ -1,0 +1,28 @@
+/*
+This is a
+multi-line comment
+*/
+
+class AnalyzeClass:
+    # This is a constructor method
+    def __init__(self):
+        pass
+
+    def some_random_method(self):
+        for i in some_list:
+            # Random break statement
+            break
+
+    def some_other_random_method(self):
+        for y in some_other_list:
+            # Random continue statement
+            continue
+
+    def analyze_this(x: int, y: str):
+        # This does something
+        if x == 1:
+            return x
+        elif y == str(x):
+            return y
+        else:
+            return str(x) + y

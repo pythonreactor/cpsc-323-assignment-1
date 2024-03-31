@@ -1,0 +1,8 @@
+def analyze_this(x: int, y: str):
+    # This does something
+    if x == 1:
+        return x
+    elif y == str(x):
+        return y
+    else:
+        return str(x) + y
